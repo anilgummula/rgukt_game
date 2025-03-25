@@ -35,18 +35,20 @@ export default function LandingPage() {
                 <div className="flex flex-col text-white justify-center mx-auto w-full py-16">
                     <h1 className="font-bold text-2xl text-center p-2">TEAM</h1>
                     <div className="flex flex-wrap justify-center mt-6 gap-6">
-                        <a href="https://github.com/anilgummula" target="_blank" className="w-full sm:w-auto">
+                        <a href="https://in.linkedin.com/in/anil-gummula" target="_blank" className="w-full sm:w-auto">
                             <div className="flex items-center border-2 rounded-lg p-6 sm:p-10">
                                 <img src="/devil.jpg" alt="" className="border-2 w-12 h-12 sm:w-14 sm:h-14 rounded-full" />
                                 <p className="ml-6 text-lg sm:text-xl font-semibold text-teal-300 underline">ANIL GUMMULA</p>
                             </div>
                         </a>
-                        <a href="https://github.com/anilgummula" target="_blank" className="w-full sm:w-auto">
+
+                        <a href="https://in.linkedin.com/in/talari-srinivas" target="_blank" className="w-full sm:w-auto">
                             <div className="flex items-center border-2 rounded-lg p-6 sm:p-10">
                                 <img src="/srinivas-dp.jpg" alt="" className="border-2 w-12 h-12 sm:w-14 sm:h-14 rounded-full" />
                                 <p className="ml-6 text-lg sm:text-xl font-semibold text-yellow-200 underline">SRINIVAS TALARI</p>
                             </div>
                         </a>
+                        
                     </div>
                 </div>
                 
