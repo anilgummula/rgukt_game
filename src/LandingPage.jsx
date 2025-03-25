@@ -37,7 +37,7 @@ export default function LandingPage() {
                     <div className="flex flex-wrap justify-center mt-6 gap-6">
                         <a href="https://in.linkedin.com/in/anil-gummula" target="_blank" className="w-full sm:w-auto">
                             <div className="flex items-center border-2 rounded-lg p-6 sm:p-10">
-                                <img src="/devil.jpg" alt="" className="border-2 w-12 h-12 sm:w-14 sm:h-14 rounded-full" />
+                                <img src="/dp.png" alt="" className="border-2 w-12 h-12 sm:w-14 sm:h-14 rounded-full" />
                                 <p className="ml-6 text-lg sm:text-xl font-semibold text-teal-300 underline">ANIL GUMMULA</p>
                             </div>
                         </a>
