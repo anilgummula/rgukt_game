@@ -1,9 +1,21 @@
 import React, { useState } from "react";
 import { FaWindows, FaLinux, FaAndroid } from "react-icons/fa";
 import Portfolio from "./Portfolio";
+import UbuntuPopup from "./UbuntuPopup";
+import CodeBlock from "./CodeBlock";
 
 export default function LandingPage() {
     const [showPopup, setShowPopup] = useState(false);
+    const [showUbuntuPopup, setShowUbuntuPopup] = useState(false);
+
+    const handleUbuntuDownload = (e) => {
+        e.preventDefault(); // Prevent immediate navigation
+        setShowUbuntuPopup(true);
+
+        setTimeout(() => {
+            window.location.href = "https://www.dropbox.com/scl/fi/aw6cuw55cc2pex7beizwp/rgukt-game.deb?rlkey=94y03l9dllqwmfdh0ucbdqlvi&st=ei2hemnw&dl=1";
+        }, 1000); // Delay before starting download
+    };
 
     return (
         <>
@@ -15,18 +27,24 @@ export default function LandingPage() {
                         Experience RGUKT in an immersive 3D environment. Available on multiple platforms.
                     </p>
                     <div className="flex flex-wrap justify-center gap-4 sm:gap-6 mt-10">
+
                         <a className="flex items-center justify-center bg-red-600 px-6 py-3 text-lg font-bold uppercase rounded-md shadow-md hover:bg-red-800 transition-all"
                             href="https://www.dropbox.com/scl/fi/ao3z2ox3lfme46u4iv1w8/Rgukt-Game.exe?rlkey=2iju0i2kp2r913my5qmdfrgvg&st=60r7puxb&dl=1">
                             <FaWindows className="mr-2" /> Windows
                         </a>
                         <button className="flex items-center justify-center bg-red-600 px-6 py-3 text-lg font-bold uppercase rounded-md shadow-md hover:bg-red-800 transition-all"
-                            onClick={() => setShowPopup(true)}>
+                            onClick={handleUbuntuDownload}>
                             <FaLinux className="mr-2" /> Ubuntu
                         </button>
                         <button className="flex items-center justify-center bg-red-600 px-6 py-3 text-lg font-bold uppercase rounded-md shadow-md hover:bg-red-800 transition-all"
                             onClick={() => setShowPopup(true)}>
                             <FaAndroid className="mr-2" /> Android
                         </button>
+
+                    </div>
+                    {/* <UbuntuPopup onClose={() => setShowUbuntuPopup(false)} /> */}
+                    <div className="flex justify-center items-center h-screen bg-black">
+                        <CodeBlock />
                     </div>
                 </div>
             </div>
@@ -95,6 +113,9 @@ export default function LandingPage() {
                     </div>
                 </div>
             )}
+
+            {/* Ubuntu Popup */}
+            {showUbuntuPopup && <UbuntuPopup onClose={() => setShowUbuntuPopup(false)} />}
         </>
     );
 }
