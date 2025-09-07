@@ -23,7 +23,7 @@ export default function CodeBlock() {
     };
   
     return (
-      <div className="bg-[#161B22] text-white font-mono rounded-lg p-4 w-full max-w-2xl relative">
+      <div className="bg-[#161B22]  text-white font-mono rounded-lg p-4 w-full max-w-2xl relative">
         <h1 className="text-lg font-bold mb-2">Ubuntu Setup Commands</h1>
         <pre className="bg-[#0D1117] p-3 rounded-lg overflow-x-auto whitespace-pre-wrap text-left text-blue-300 w-full">
           {codeText}
