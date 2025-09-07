@@ -22,8 +22,8 @@ export default function LandingPage() {
             <div className="min-h-screen bg-[url('/bg.png')] bg-cover bg-center flex flex-col items-center justify-center py-20 px-4">
                 <div className="text-center text-white px-4 max-w-3xl space-y-12">
                     <h1 className="text-4xl sm:text-5xl font-extrabold uppercase text-red-600 font-rajdhani">RGUKT Virtual Game</h1>
-                    <h2 className="text-2xl text-yellow-200 sm:text-3xl font-bold uppercase">Choose Your Platform & Download</h2>
-                    <p className="text-lg text-gray-100 font-semibold">
+                    <h2 className="text-2xl text-yellow-200 sm:text-3xl font-bold uppercase font-exo">Choose Your Platform & Download</h2>
+                    <p className="text-lg text-gray-100 font-semibold font-exo">
                         Experience <span className="text-yellow-400">RGUKT-B</span>  in an immersive 3D environment. Available on multiple platforms.
                     </p>
                     <div className="flex flex-wrap justify-center gap-4 sm:gap-6 mt-10">
